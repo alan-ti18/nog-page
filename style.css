@@ -1,0 +1,134 @@
+:root {
+--cor-de-fundo: #00030C;
+--azul-padrao: #2547B0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor-de-fundo);
+    color: #ddd;
+}
+
+.flex {
+    display: flex;
+}
+
+.imagem-principal {
+    background-image: url("/assets/img/bg-banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-self: flex-end;
+}
+
+.container {
+    width: 90%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+img, .btn {
+    transition: 0.5s;
+}
+
+img:hover, .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.btn {
+    padding: 16px 80px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+}
+
+.btn-principal {
+    color: #fff;
+    background-color: var(--azul-padrao);
+    border: none;
+}
+
+.btn-secundario {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 80px;
+    padding-top: 80px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sub-titulo {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.texto-simples {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.valores-item {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+
+.rodape {
+    height: 40vh;
+    display: flex;
+    padding-top: 80px;
+    gap: 80px;
+    justify-content: center;
+}
