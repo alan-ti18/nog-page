@@ -32,7 +32,7 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
+a, a:hover, a:visited {
     text-decoration: none;
 }
 
@@ -41,32 +41,26 @@ ol, ul {
 }
 
 .home {
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh;
+    width: 100vw; */
     background-color: var(--cor-de-fundo);
     color: #ddd;
 }
 
-.flex {
-    display: flex;
-}
-
 .imagem-principal {
-    background-image: url("/assets/img/bg-banner2.jpg");
+    background-image: url("/assets/img/banner-img.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 70%;
     background-position: right;
     height: 100vh;
-    width: 50vw;
-    display: flex;
-    align-self: flex-end;
+    min-width: 100%;
 }
 
-.container {
+/* .container {
     width: 90%;
     max-width: 1800px;
     margin: 0 auto;
-}
+} */
 
 img, .btn {
     transition: 0.5s;
@@ -75,6 +69,7 @@ img, .btn {
 img:hover, .btn:hover {
     cursor: pointer;
     transform: scale(1.1);
+    color: #eee;
 }
 
 .btn {
@@ -102,7 +97,7 @@ img:hover, .btn:hover {
 
 .titulo {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 160px;
     padding-top: 80px;
     font-size: 2rem;
     font-weight: 600;
@@ -117,18 +112,48 @@ img:hover, .btn:hover {
 .texto-simples {
     font-size: 1.2rem;
     font-weight: 500;
-}
-
-.valores-item {
-    display: flex;
-    flex-direction: column;
-    width: 1000px;
+    line-height: 1.75rem;
 }
 
 .rodape {
     height: 40vh;
-    display: flex;
     padding-top: 80px;
     gap: 80px;
     justify-content: center;
+}
+
+.ladrilho {
+    background-image: url("/assets/img/banner-img.png");
+    background-repeat: repeat;
+    background-size: 1px;
+    background-position: right;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(2px);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
+.elemento-flutuante {
+    animation: float 0.8s infinite;
+}
+
+.btn-topo {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: #fff 2px solid;
+    background-color: #fff;
+    box-shadow: #0a163b 2px 3px 1px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
