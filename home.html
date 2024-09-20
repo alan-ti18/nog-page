@@ -68,8 +68,40 @@
       id="servicos"
       style="height: 100vh; background-color: #ddd; color: var(--azul-padrao)"
     >
-      <div class="ladrilho"></div>
       <h2 class="titulo">Nossos Serviços</h2>
+      <div class="row">
+        <div class="d-flex flex-column col-6 offset-md-5">
+          <article class="py-4">
+            <h3 class="sub-titulo">Consultoria em TI</h3>
+            <span class="texto-simples"
+              >Nossa equipe especializada oferece consultoria em TI para
+              otimizar processos e alinhar a tecnologia às necessidades do seu
+              negócio. Desde a análise de infraestrutura até a escolha das
+              melhores soluções tecnológicas, ajudamos sua empresa a maximizar a
+              eficiência e reduzir custos com estratégias personalizadas.</span
+            >
+          </article>
+          <article class="py-4">
+            <h3 class="sub-titulo">Desenvolvimento de Sistemas e Aplicações</h3>
+            <span class="texto-simples"
+              >Criamos soluções de software sob medida para atender às demandas
+              específicas do seu negócio. Nossa abordagem abrange desde o
+              levantamento de requisitos até a entrega final, sempre utilizando
+              as melhores práticas em desenvolvimento ágil para garantir
+              sistemas escaláveis, seguros e de alta performance.</span
+            >
+          </article>
+          <article class="py-4">
+            <h3 class="sub-titulo">Construção de Serviços Web</h3>
+            <span class="texto-simples"
+              >Desenvolvemos serviços Web modernos e otimizados para atender as
+              diversass necessidades e plataformas da sua empresa,
+              proporcionando uma excelente experiência ao usuário e garantindo
+              que sua presença digital seja eficiente e impactante.</span
+            >
+          </article>
+        </div>
+      </div>
     </section>
     <section id="valores" class="container-fluid" style="height: 100vh">
       <h2 class="titulo">Os valores que cultivamos</h2>
@@ -125,17 +157,5 @@
     </a>
     href="#principal""
   </body>
-  <script>
-    const btnTopo = document.querySelector(".btn-topo");
-    function handleBtnTopo() {
-      //   if (window.scrollY > 100) btnTopo.style.display = "flex";
-      window.addEventListener("scroll", () => {
-        console.log(window.scrollY);
-        window.scrollY > 100
-          ? (btnTopo.style.display = "flex")
-          : (btnTopo.style.display = "none");
-      });
-    }
-    handleBtnTopo();
-  </script>
+  <script src="script.js"></script>
 </html>
