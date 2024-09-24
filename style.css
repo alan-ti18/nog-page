@@ -47,7 +47,7 @@ ol, ul {
 }
 
 .imagem-principal {
-    background-image: url("/assets/img/banner-img.png");
+    background-image: url("./assets/img/banner-img.png");
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: right;
