@@ -41,14 +41,13 @@ ol, ul {
 }
 
 .home {
-    /* height: 100vh;
-    width: 100vw; */
     background-color: var(--cor-de-fundo);
     color: #ddd;
+    overflow-x: hidden;
 }
 
 .imagem-principal {
-    background-image: url("/assets/img/banner-img.png");
+    background-image: url("./assets/img/banner-img.png");
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: right;
