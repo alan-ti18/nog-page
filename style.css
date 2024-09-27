@@ -151,7 +151,8 @@ img.img-logo, .btn {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(7, 7, 7, 0.33);
+    border: 1px solid #bbb;
+    padding: 48px 80px;
 }
 
 @media screen and (max-width: 768px) {
@@ -206,5 +207,16 @@ img.img-logo, .btn {
 
     .item-valores {
         max-width: 80%;
+    }
+
+    .card-contacts {
+        padding: 24px 40px;
+    }
+
+    footer span {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 16px;
     }
 }
