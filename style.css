@@ -196,5 +196,15 @@ img.img-logo, .btn {
         white-space: normal;
     }
 
+    .itens-valores {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0;
 
+    }
+
+    .item-valores {
+        max-width: 80%;
+    }
 }
