@@ -41,7 +41,7 @@
         <h2
           style="
             font-weight: 600;
-            font-size: 2rem;
+            font-size: clamp(1.2rem, 5vw, 2rem);
             text-align: center;
             width: 60%;
           "
@@ -66,16 +66,16 @@
     </section>
     <section
       id="servicos"
+      class="w-100"
       style="
         min-height: 100vh;
         height: auto;
-        width: 100%;
         background-color: #ddd;
         color: var(--azul-padrao);
       "
     >
       <h2 class="titulo">Nossos Serviços</h2>
-      <div id="conteudo-servicos" class="row align-items-center">
+      <div id="conteudo-servicos" class="row align-items-center w-100">
         <div class="d-flex flex-column col-md-6 col-12">
           <img
             src="./assets/img/servicos-img.png"
@@ -86,7 +86,7 @@
           />
         </div>
         <div class="servicos-itens d-flex flex-column col-md-6 col-sm-12">
-          <article class="servicos-item py-4" style="width: 90%">
+          <article class="servicos-item py-4">
             <h3 class="sub-titulo">Consultoria em TI</h3>
             <span class="texto-simples"
               >Nossa equipe especializada oferece consultoria em TI para
@@ -96,7 +96,7 @@
               eficiência e reduzir custos com estratégias personalizadas.</span
             >
           </article>
-          <article class="servicos-item py-4" style="width: 90%">
+          <article class="servicos-item py-4">
             <h3 class="sub-titulo">Desenvolvimento de Sistemas e Aplicações</h3>
             <span class="texto-simples"
               >Criamos soluções de software sob medida para atender às demandas
@@ -106,7 +106,7 @@
               sistemas escaláveis, seguros e de alta performance.</span
             >
           </article>
-          <article class="servicos-item py-4" style="width: 90%">
+          <article class="servicos-item py-4">
             <h3 class="sub-titulo">Construção de Serviços Web</h3>
             <span class="texto-simples"
               >Desenvolvemos serviços Web modernos e otimizados para atender as

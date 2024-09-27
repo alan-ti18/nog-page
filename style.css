@@ -44,7 +44,7 @@ ol, ul {
     background-color: var(--cor-de-fundo);
     color: #ddd;
     overflow-x: hidden;
-    max-width: 100%;
+    max-width: auto;
 }
 
 .imagem-principal {
@@ -155,9 +155,13 @@ img.img-logo, .btn {
 }
 
 @media screen and (max-width: 768px) {
+    #principal {
+        max-width: auto;
+    }
     #conteudo-servicos {
       flex-direction: column;
       align-items: center;
+      max-width: 100%;
     }
 
     .titulo {
@@ -166,6 +170,7 @@ img.img-logo, .btn {
 
     .servicos-itens {
         padding: 8px 16px;
+        max-width: 80%;
     }
 
     .servicos-itens span {
@@ -187,7 +192,8 @@ img.img-logo, .btn {
 
     .btn {
         padding: 24px 24px;
-        width: 98%;
+        max-width: 100%;
+        white-space: normal;
     }
 
 
